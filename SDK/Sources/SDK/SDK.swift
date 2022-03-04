@@ -1,3 +1,3 @@
-import ModuleA
+@_implementationOnly import ModuleA
 
 public let sdkString = "SDK: \(moduleAString)"

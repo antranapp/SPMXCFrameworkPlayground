@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D71F38D627D121D500B1DBAA /* SDKWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71F38D527D121D500B1DBAA /* SDKWrapper.framework */; };
-		D7F4787927D06CC6005569AB /* SampleAppStandaloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F4787827D06CC6005569AB /* SampleAppStandaloneApp.swift */; };
-		D7F4787B27D06CC6005569AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F4787A27D06CC6005569AB /* ContentView.swift */; };
-		D7F4787D27D06CC7005569AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F4787C27D06CC7005569AB /* Assets.xcassets */; };
-		D7F4788027D06CC7005569AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F4787F27D06CC7005569AB /* Preview Assets.xcassets */; };
+		D71F38C127D1202A00B1DBAA /* SampleAppXCFrameworkStandaloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F38C027D1202A00B1DBAA /* SampleAppXCFrameworkStandaloneApp.swift */; };
+		D71F38C327D1202A00B1DBAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71F38C227D1202A00B1DBAA /* ContentView.swift */; };
+		D71F38C527D1202B00B1DBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71F38C427D1202B00B1DBAA /* Assets.xcassets */; };
+		D71F38C827D1202B00B1DBAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71F38C727D1202B00B1DBAA /* Preview Assets.xcassets */; };
+		D71F38DB27D1244600B1DBAA /* SDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71F38D027D1208C00B1DBAA /* SDK.xcframework */; };
+		D71F38DC27D1244600B1DBAA /* SDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D71F38D027D1208C00B1DBAA /* SDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D7F4788B27D06D01005569AB /* Embed Frameworks */ = {
+		D71F38DD27D1244600B1DBAA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D71F38DC27D1244600B1DBAA /* SDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,64 +30,64 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D71F38D527D121D500B1DBAA /* SDKWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDKWrapper.framework; path = ../../.build/SDKWrapper.framework; sourceTree = "<group>"; };
-		D7F4787527D06CC6005569AB /* SampleAppStandalone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppStandalone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7F4787827D06CC6005569AB /* SampleAppStandaloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppStandaloneApp.swift; sourceTree = "<group>"; };
-		D7F4787A27D06CC6005569AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D7F4787C27D06CC7005569AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D7F4787F27D06CC7005569AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D71F38BD27D1202A00B1DBAA /* SampleAppXCFrameworkStandalone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppXCFrameworkStandalone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71F38C027D1202A00B1DBAA /* SampleAppXCFrameworkStandaloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppXCFrameworkStandaloneApp.swift; sourceTree = "<group>"; };
+		D71F38C227D1202A00B1DBAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D71F38C427D1202B00B1DBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D71F38C727D1202B00B1DBAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D71F38D027D1208C00B1DBAA /* SDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDK.xcframework; path = ../../.build/SDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D7F4787227D06CC6005569AB /* Frameworks */ = {
+		D71F38BA27D1202A00B1DBAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D71F38D627D121D500B1DBAA /* SDKWrapper.framework in Frameworks */,
+				D71F38DB27D1244600B1DBAA /* SDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D7F4786C27D06CC6005569AB = {
+		D71F38B427D1202A00B1DBAA = {
 			isa = PBXGroup;
 			children = (
-				D7F4787727D06CC6005569AB /* SampleAppStandalone */,
-				D7F4787627D06CC6005569AB /* Products */,
-				D7F4788827D06D01005569AB /* Frameworks */,
+				D71F38BF27D1202A00B1DBAA /* SampleAppXCFrameworkStandalone */,
+				D71F38BE27D1202A00B1DBAA /* Products */,
+				D71F38D227D120A800B1DBAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D7F4787627D06CC6005569AB /* Products */ = {
+		D71F38BE27D1202A00B1DBAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7F4787527D06CC6005569AB /* SampleAppStandalone.app */,
+				D71F38BD27D1202A00B1DBAA /* SampleAppXCFrameworkStandalone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7F4787727D06CC6005569AB /* SampleAppStandalone */ = {
+		D71F38BF27D1202A00B1DBAA /* SampleAppXCFrameworkStandalone */ = {
 			isa = PBXGroup;
 			children = (
-				D71F38D527D121D500B1DBAA /* SDKWrapper.framework */,
-				D7F4787827D06CC6005569AB /* SampleAppStandaloneApp.swift */,
-				D7F4787A27D06CC6005569AB /* ContentView.swift */,
-				D7F4787C27D06CC7005569AB /* Assets.xcassets */,
-				D7F4787E27D06CC7005569AB /* Preview Content */,
+				D71F38D027D1208C00B1DBAA /* SDK.xcframework */,
+				D71F38C027D1202A00B1DBAA /* SampleAppXCFrameworkStandaloneApp.swift */,
+				D71F38C227D1202A00B1DBAA /* ContentView.swift */,
+				D71F38C427D1202B00B1DBAA /* Assets.xcassets */,
+				D71F38C627D1202B00B1DBAA /* Preview Content */,
 			);
-			path = SampleAppStandalone;
+			path = SampleAppXCFrameworkStandalone;
 			sourceTree = "<group>";
 		};
-		D7F4787E27D06CC7005569AB /* Preview Content */ = {
+		D71F38C627D1202B00B1DBAA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D7F4787F27D06CC7005569AB /* Preview Assets.xcassets */,
+				D71F38C727D1202B00B1DBAA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D7F4788827D06D01005569AB /* Frameworks */ = {
+		D71F38D227D120A800B1DBAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -95,42 +97,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7F4787427D06CC6005569AB /* SampleAppStandalone */ = {
+		D71F38BC27D1202A00B1DBAA /* SampleAppXCFrameworkStandalone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7F4788327D06CC7005569AB /* Build configuration list for PBXNativeTarget "SampleAppStandalone" */;
+			buildConfigurationList = D71F38CB27D1202B00B1DBAA /* Build configuration list for PBXNativeTarget "SampleAppXCFrameworkStandalone" */;
 			buildPhases = (
-				D7F4787127D06CC6005569AB /* Sources */,
-				D7F4787227D06CC6005569AB /* Frameworks */,
-				D7F4787327D06CC6005569AB /* Resources */,
-				D7F4788B27D06D01005569AB /* Embed Frameworks */,
+				D71F38B927D1202A00B1DBAA /* Sources */,
+				D71F38BA27D1202A00B1DBAA /* Frameworks */,
+				D71F38BB27D1202A00B1DBAA /* Resources */,
+				D71F38DD27D1244600B1DBAA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SampleAppStandalone;
+			name = SampleAppXCFrameworkStandalone;
 			packageProductDependencies = (
 			);
-			productName = SampleAppStandalone;
-			productReference = D7F4787527D06CC6005569AB /* SampleAppStandalone.app */;
+			productName = SampleAppXCFrameworkStandalone;
+			productReference = D71F38BD27D1202A00B1DBAA /* SampleAppXCFrameworkStandalone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D7F4786D27D06CC6005569AB /* Project object */ = {
+		D71F38B527D1202A00B1DBAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					D7F4787427D06CC6005569AB = {
+					D71F38BC27D1202A00B1DBAA = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D7F4787027D06CC6005569AB /* Build configuration list for PBXProject "SampleAppStandalone" */;
+			buildConfigurationList = D71F38B827D1202A00B1DBAA /* Build configuration list for PBXProject "SampleAppXCFrameworkStandalone" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,42 +140,42 @@
 				en,
 				Base,
 			);
-			mainGroup = D7F4786C27D06CC6005569AB;
-			productRefGroup = D7F4787627D06CC6005569AB /* Products */;
+			mainGroup = D71F38B427D1202A00B1DBAA;
+			productRefGroup = D71F38BE27D1202A00B1DBAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7F4787427D06CC6005569AB /* SampleAppStandalone */,
+				D71F38BC27D1202A00B1DBAA /* SampleAppXCFrameworkStandalone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D7F4787327D06CC6005569AB /* Resources */ = {
+		D71F38BB27D1202A00B1DBAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F4788027D06CC7005569AB /* Preview Assets.xcassets in Resources */,
-				D7F4787D27D06CC7005569AB /* Assets.xcassets in Resources */,
+				D71F38C827D1202B00B1DBAA /* Preview Assets.xcassets in Resources */,
+				D71F38C527D1202B00B1DBAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D7F4787127D06CC6005569AB /* Sources */ = {
+		D71F38B927D1202A00B1DBAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F4787B27D06CC6005569AB /* ContentView.swift in Sources */,
-				D7F4787927D06CC6005569AB /* SampleAppStandaloneApp.swift in Sources */,
+				D71F38C327D1202A00B1DBAA /* ContentView.swift in Sources */,
+				D71F38C127D1202A00B1DBAA /* SampleAppXCFrameworkStandaloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D7F4788127D06CC7005569AB /* Debug */ = {
+		D71F38C927D1202B00B1DBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +236,7 @@
 			};
 			name = Debug;
 		};
-		D7F4788227D06CC7005569AB /* Release */ = {
+		D71F38CA27D1202B00B1DBAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,15 +291,14 @@
 			};
 			name = Release;
 		};
-		D7F4788427D06CC7005569AB /* Debug */ = {
+		D71F38CC27D1202B00B1DBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleAppStandalone/Preview Content\"";
-				DEVELOPMENT_TEAM = 83JX5J5A2C;
+				DEVELOPMENT_ASSET_PATHS = "\"SampleAppXCFrameworkStandalone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -310,7 +311,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.antran.spm.SampleAppStandalone;
+				PRODUCT_BUNDLE_IDENTIFIER = app.antran.spm.SampleAppXCFrameworkStandalone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,15 +319,14 @@
 			};
 			name = Debug;
 		};
-		D7F4788527D06CC7005569AB /* Release */ = {
+		D71F38CD27D1202B00B1DBAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SampleAppStandalone/Preview Content\"";
-				DEVELOPMENT_TEAM = 83JX5J5A2C;
+				DEVELOPMENT_ASSET_PATHS = "\"SampleAppXCFrameworkStandalone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -339,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.antran.spm.SampleAppStandalone;
+				PRODUCT_BUNDLE_IDENTIFIER = app.antran.spm.SampleAppXCFrameworkStandalone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,25 +350,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7F4787027D06CC6005569AB /* Build configuration list for PBXProject "SampleAppStandalone" */ = {
+		D71F38B827D1202A00B1DBAA /* Build configuration list for PBXProject "SampleAppXCFrameworkStandalone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7F4788127D06CC7005569AB /* Debug */,
-				D7F4788227D06CC7005569AB /* Release */,
+				D71F38C927D1202B00B1DBAA /* Debug */,
+				D71F38CA27D1202B00B1DBAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7F4788327D06CC7005569AB /* Build configuration list for PBXNativeTarget "SampleAppStandalone" */ = {
+		D71F38CB27D1202B00B1DBAA /* Build configuration list for PBXNativeTarget "SampleAppXCFrameworkStandalone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7F4788427D06CC7005569AB /* Debug */,
-				D7F4788527D06CC7005569AB /* Release */,
+				D71F38CC27D1202B00B1DBAA /* Debug */,
+				D71F38CD27D1202B00B1DBAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D7F4786D27D06CC6005569AB /* Project object */;
+	rootObject = D71F38B527D1202A00B1DBAA /* Project object */;
 }

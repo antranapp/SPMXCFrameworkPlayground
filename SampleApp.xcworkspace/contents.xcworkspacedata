@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SampleAppXCFrameworkStandalone/SampleAppXCFrameworkStandalone.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SampleAppStandalone/SampleAppStandalone.xcodeproj">
    </FileRef>
    <FileRef

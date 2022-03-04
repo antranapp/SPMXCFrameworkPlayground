@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# https://medium.com/@german.velibekov_7849/how-to-create-ios-fat-frameworks-libraries-and-thin-c20c2f7e00f0
+
 set -o pipefail
 set -e
 
@@ -22,13 +25,10 @@ do
     esac
 done
 
-BUILD_DIR=/tmp/fat-frameworks
-
-UNIVERSAL_OUTPUT_DIR=${BUILD_DIR}/${CONFIGURATION}-universal
-RELEASE_DIR=${PROJECT_DIR}/build
-
 # make sure the output directory exists
-mkdir -p "${UNIVERSAL_OUTPUTFOLDER}"
+mkdir -p "${FAT_DIR}"
+
+BUILD_DIR=./.build
 
 sdk=iphoneos
 dataPath=$BUILD_DIR/$sdk
@@ -70,6 +70,7 @@ createFatFramework() {
     local simFramework=$3
     local outputDir=$4
     
+
     # create fat binary
     lipo \
     -create $simFramework/$frameworkName $deviceFramework/$frameworkName \
